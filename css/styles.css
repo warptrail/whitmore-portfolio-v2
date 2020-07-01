@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #6b7898;
+}
+
+/* Links */
+a {
+  font-size: 24px;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgb(89, 139, 184);
+  background: linear-gradient(
+    180deg,
+    rgba(89, 139, 184, 0.7253883670520231) 0%,
+    rgba(80, 146, 165, 0.6097814306358382) 21%,
+    rgba(107, 120, 152, 1) 100%
+  );
+}
+
+header h1 {
+  margin: 0px;
+  text-align: center;
+  font-size: 38px;
+  font-family: 'Lexend Tera', sans-serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  font-size: 22px;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Images */
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Main */
+
+.wrapper {
+  width: 100%;
+}
+
+main h2 {
+  font-size: 30px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+main p {
+  line-height: 1.5em;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+#home,
+#portfolio,
+#contact {
+  margin-bottom: 80px;
+}
+
+/* Groups & Items */
+.wrapper {
+  width: 100%;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+.sub-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sub-item {
+  justify-content: center;
+}
+
+.center {
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+/* About Article */
+
+#about {
+  background: linear-gradient(
+    180deg,
+    rgba(107, 120, 152, 1) 0%,
+    rgba(93, 133, 174, 1) 39%,
+    rgb(119, 167, 177) 69%,
+    rgba(107, 120, 152, 1) 100%
+  );
+  padding: 20px 0 30px 0;
+  margin: 80px 0;
+}
+.sigil {
+  text-align: center;
+}
+.sigil img {
+  width: 40%;
+}
+
+/* Portfolio Article */
+h3 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+footer {
+  background-color: darkgray;
+  padding: 10px;
+}
+
+/* Contact Article */
+
+.contact-me {
+  margin: 60px 0;
+}
+
+.contact-me h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact-me nav {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-frame {
+  margin: 0 20px;
+}
+
+.icon-frame img {
+  width: 100px;
+}
+
+.icon-frame img:hover {
+  filter: hue-rotate(330deg);
+  filter: brightness(1.5);
+}
+
+.contact-me a {
+  text-align: center;
+}
+
+.map {
+  margin: 50px 0;
+}
+
+/* Form */
+
+form p,
+form label {
+  margin: auto 0;
+  padding: 5px;
+  font-size: 20px;
+}
+
+form input[type='number'],
+form input[type='text'] {
+  height: 30px;
+  width: 100%;
+  font-size: 20px;
+  padding: 12px;
+  border: 2px solid #e1ddf7;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+form .txt-input input {
+  width: 100%;
+}
+
+#age {
+  width: 30%;
+}
+
+#zip {
+  width: 40%;
+}
+select {
+  width: 90%;
+  height: 30px;
+  border-radius: 10px;
+}
+.class-select .item {
+  justify-content: center;
+  width: 100%;
+}
+
+form textarea {
+  height: 4.75rem;
+  width: 100%;
+  border-radius: 10px;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  width: 90%;
+  height: 40px;
+  margin: 5px 0;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: rgb(89, 139, 184);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Desktop Media */
+
+@media all and (min-width: 800px) {
+  /* Links  Desktop*/
+  a:hover {
+    color: #4c4eac;
+  }
+  a:active {
+    color: #7d7ebb;
+  }
+
+  /* Header Desktop*/
+  header {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    margin: 14px 0 0 34px;
+    padding-top: 0;
+  }
+
+  header nav ul {
+    margin: auto;
+  }
+
+  header nav ul li:last-child a {
+    margin-right: 18px;
+  }
+
+  /* Utility Desktop*/
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  /* Home Article Desktop*/
+  #home {
+    margin-top: 80px;
+  }
+  .portrait {
+    margin: auto 0;
+  }
+
+  #home img {
+    width: 88%;
+    border-radius: 10px;
+    justify-content: center;
+  }
+
+  .intro {
+    justify-content: center;
+    margin: auto 0;
+  }
+
+  /* About Article Desktop*/
+
+  .sigil {
+    margin: auto 0;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .sigil img {
+    width: 100%;
+  }
+
+  /* Form Desktop*/
+  form div {
+    display: flex;
+    flex-direction: row;
+  }
+  form input[type='number'],
+  form input[type='text'] {
+    height: 30px;
+    width: 80%;
+    font-size: 23px;
+    margin: auto 10px;
+  }
+
+  form .txt-input label {
+    text-align: center;
+  }
+
+  #age {
+    width: 120px;
+  }
+
+  #zip {
+    width: 420px;
+  }
+
+  form button {
+    margin: 0 20px;
+  }
+
+  .class-select {
+    width: 100%;
+  }
+  select {
+    width: 50%;
+  }
+
+  .align-center {
+    justify-content: space-evenly;
+  }
+  .compress {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .compress p {
+    margin: 0 auto;
+  }
+  .compress input {
+    margin: 0 10px;
+  }
+}
