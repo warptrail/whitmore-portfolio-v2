@@ -38,7 +38,7 @@ header {
 header h1 {
   margin: 0px;
   text-align: center;
-  font-size: 38px;
+  font-size: 80px;
   font-family: 'Lexend Tera', sans-serif;
 }
 
@@ -58,9 +58,9 @@ header nav ul li {
 }
 
 header nav ul li a {
-  font-size: 22px;
+  font-size: 100%;
   text-decoration: none;
-  margin: 0 20px 0 0;
+  margin: 0 1em 0 0;
 }
 
 header nav ul li:last-child a {
@@ -149,6 +149,11 @@ main p {
   padding: 20px 0 30px 0;
   margin: 80px 0;
 }
+
+.services-provided {
+  font-size: 24px;
+  line-height: 1.7em;
+}
 .sigil {
   text-align: center;
 }
@@ -167,6 +172,15 @@ footer {
   padding: 10px;
 }
 
+#portfolio .group .item {
+  background-color:#6096EF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#portfolio .group .item img {
+  border-radius: 20px;
+}
 /* Contact Article */
 
 .contact-me {
@@ -184,11 +198,11 @@ footer {
 }
 
 .icon-frame {
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .icon-frame img {
-  width: 100px;
+  width: 100%;
 }
 
 .icon-frame img:hover {
@@ -200,8 +214,19 @@ footer {
   text-align: center;
 }
 
+.phone p{
+  font-size: 32px;
+}
 .map {
-  margin: 50px 0;
+  margin: 0;
+  overflow: hidden;
+  height: 500px;
+  width: 100%;
+}
+
+.map iframe {
+  width: 600px;
+  height: 400px;
 }
 
 /* Form */
@@ -225,23 +250,6 @@ form input[type='text'] {
 }
 
 form .txt-input input {
-  width: 100%;
-}
-
-#age {
-  width: 30%;
-}
-
-#zip {
-  width: 40%;
-}
-select {
-  width: 90%;
-  height: 30px;
-  border-radius: 10px;
-}
-.class-select .item {
-  justify-content: center;
   width: 100%;
 }
 
@@ -287,15 +295,22 @@ button {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 30px;
+    flex-direction: column;
   }
 
   header h1 {
+    font-size: 60px;
     margin: 14px 0 0 34px;
     padding-top: 0;
   }
 
+  header nav {
+    margin-top: 20px;
+  }
   header nav ul {
     margin: auto;
+    font-size: 24px;
+    
   }
 
   header nav ul li:last-child a {
@@ -306,6 +321,7 @@ button {
   .wrapper {
     width: 80%;
     margin: auto;
+
   }
 
   .group {
@@ -340,7 +356,13 @@ button {
   }
 
   .sigil img {
-    width: 100%;
+    width: 80%;
+  }
+
+  /* Contact icons */
+  .icon-frame img {
+    width: 150px;
+    margin: 0 20px;
   }
 
   /* Form Desktop*/
@@ -360,23 +382,8 @@ button {
     text-align: center;
   }
 
-  #age {
-    width: 120px;
-  }
-
-  #zip {
-    width: 420px;
-  }
-
   form button {
     margin: 0 20px;
-  }
-
-  .class-select {
-    width: 100%;
-  }
-  select {
-    width: 50%;
   }
 
   .align-center {
