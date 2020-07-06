@@ -267,8 +267,8 @@ form textarea {
 }
 
 button {
-  width: 90%;
-  height: 40px;
+  width: 50%;
+  height: 60px;
   margin: 5px 0;
   font-size: 26px;
   font-weight: bold;
@@ -384,6 +384,11 @@ button {
 
   form button {
     margin: 0 20px;
+    width: 60%;
+  }
+
+  form button:hover {
+    filter: hue-rotate(340deg);
   }
 
   .align-center {
